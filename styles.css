@@ -1,0 +1,45 @@
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: roboto;
+    font-size: 40px;
+}
+
+p {
+    font-family: roboto;
+    margin-bottom: 35px;
+}
+
+a {
+    text-decoration: none;
+    font-family: roboto;
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+    padding: 12px 10px;
+}
+
+
+.contenedor-general {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+    .contenedor-general{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+}
